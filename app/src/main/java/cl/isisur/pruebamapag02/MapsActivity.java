@@ -46,21 +46,22 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng Santos = new LatLng(-36.601094, -72.106767);
-        LatLng Lugares = new LatLng(-36.603367, -72.091297);
-        LatLng Lugares1 = new LatLng(-36.604587, -72.083914);
-        LatLng Lugares2 = new LatLng(-36.6119628,-72.07268723);
-        LatLng Grez = new LatLng(-36.602517302817866,-72.10115649861793);
-        LatLng Felipe =new LatLng(-36.635414, -71.996863);
 
-        mMap.addMarker(new MarkerOptions().position(Santos).title("Santo Tomas Chillán - Gamero"));
-        mMap.addMarker(new MarkerOptions().position(Lugares).title("Heladeria y Cafeteria Cremossos"));
-        mMap.addMarker(new MarkerOptions().position(Lugares1).title("Cecinas Ramos Cordillera"));
-        mMap.addMarker(new MarkerOptions().position(Lugares2).title("Fernando Muñoz"));
-        mMap.addMarker(new MarkerOptions().position(Grez).title("Grez y Ulloa"));
-        mMap.addMarker(new MarkerOptions().position(Felipe).title("Felipe"));
+        LatLng Lugar1 =new LatLng(-36.58999084991806, -72.0814869839765);
+        LatLng Lugar2 =new LatLng(-36.58651756859308, -72.13047768843629);
+        LatLng Lugar3 =new LatLng(-36.650502119872094, -72.0357752673742);
+        LatLng Lugar4 =new LatLng(-36.65227052928064, -72.10934133924727);
+        LatLng Lugar5 =new LatLng(-36.58979728421823, -72.0825509148436);
 
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(Lugares2));
+
+
+        mMap.addMarker(new MarkerOptions().position(Lugar1).title("Ubicacion 1"));
+        mMap.addMarker(new MarkerOptions().position(Lugar2).title("Ubicacion 2"));
+        mMap.addMarker(new MarkerOptions().position(Lugar3).title("Ubicacion 3"));
+        mMap.addMarker(new MarkerOptions().position(Lugar4).title("Ubicacion 4"));
+        mMap.addMarker(new MarkerOptions().position(Lugar5).title("mi Ubicacion"));
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(Lugar5,1010));
         mMap.setMinZoomPreference(4.0F);
         mMap.setMaxZoomPreference(18.0f);
 
