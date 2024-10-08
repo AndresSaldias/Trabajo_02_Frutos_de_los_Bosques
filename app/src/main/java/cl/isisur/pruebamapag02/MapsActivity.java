@@ -60,7 +60,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.addMarker(new MarkerOptions().position(Grez).title("Grez y Ulloa"));
         mMap.addMarker(new MarkerOptions().position(Felipe).title("Felipe"));
 
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(Lugares2));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Lugares2, 15));
         mMap.setMinZoomPreference(4.0F);
         mMap.setMaxZoomPreference(18.0f);
 
