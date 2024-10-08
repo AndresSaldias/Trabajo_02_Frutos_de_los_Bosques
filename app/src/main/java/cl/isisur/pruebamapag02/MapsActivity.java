@@ -46,21 +46,21 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng Santos = new LatLng(-36.601094, -72.106767);
-        LatLng Lugares = new LatLng(-36.603367, -72.091297);
-        LatLng Lugares1 = new LatLng(-36.604587, -72.083914);
-        LatLng Lugares2 = new LatLng(-36.6119628,-72.07268723);
-        LatLng Grez = new LatLng(-36.602517302817866,-72.10115649861793);
-        LatLng Felipe =new LatLng(-36.635414, -71.996863);
+        LatLng Local1 = new LatLng(-36.618174360096106, -72.1077998164599);
+        LatLng Local2 = new LatLng(-36.61397107559495, -72.12354615885812);
+        LatLng Local3 = new LatLng(-36.59073945462864, -72.08989341717141);
+        LatLng Local4 = new LatLng(-36.606409185771085, -72.0690306183908);
+        LatLng UbicacionInicial = new LatLng(-36.589807712243825, -72.08260039678616);
 
-        mMap.addMarker(new MarkerOptions().position(Santos).title("Santo Tomas Chillán - Gamero"));
-        mMap.addMarker(new MarkerOptions().position(Lugares).title("Heladeria y Cafeteria Cremossos"));
-        mMap.addMarker(new MarkerOptions().position(Lugares1).title("Cecinas Ramos Cordillera"));
-        mMap.addMarker(new MarkerOptions().position(Lugares2).title("Fernando Muñoz"));
-        mMap.addMarker(new MarkerOptions().position(Grez).title("Grez y Ulloa"));
-        mMap.addMarker(new MarkerOptions().position(Felipe).title("Felipe"));
 
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Lugares2, 15));
+        mMap.addMarker(new MarkerOptions().position(Local1).title("Local1"));
+        mMap.addMarker(new MarkerOptions().position(Local2).title("Local2"));
+        mMap.addMarker(new MarkerOptions().position(Local3).title("Local3"));
+        mMap.addMarker(new MarkerOptions().position(Local4).title("Local4"));
+        mMap.addMarker(new MarkerOptions().position(UbicacionInicial).title("Ubicacion Inicial"));
+
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(UbicacionInicial, 15));
         mMap.setMinZoomPreference(4.0F);
         mMap.setMaxZoomPreference(18.0f);
 
